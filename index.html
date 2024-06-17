@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="Elephant.jpeg" alt="elephant">
+    <div class="text-overlay">
+      <h1>Tracking the Disappearing</h1>
+      <p>A Statistical Overview of Mammal Endangerment</p>
+    </div>
+  </div>
+  <div class="section">
+    <h2>How did we get here?</h2>
+    <p>Animals are becoming endangered due to various factors such as habitat loss, climate change, pollution,
+      overexploitation, invasive species, human-wildlife conflict, and inadequate conservation efforts. These threats
+      disrupt ecosystems and pose significant challenges to animal populations.</p>
+
+    <p>Habitat loss, caused by activities like deforestation and urbanization, deprives animals of their natural
+      habitats and resources. Climate change, with rising temperatures and extreme weather events, affects food
+      availability and habitat suitability, making it difficult for species to adapt.</p>
+
+    <p>Pollution, including air, water, and soil pollution, harms animals and their ecosystems, leading to poisoning,
+      diseases, and reproductive issues. Overexploitation through hunting and illegal trade depletes endangered species.
+    </p>
+
+    <p>Invasive species disrupt native ecosystems by outcompeting native species and spreading diseases. Human-wildlife
+      conflict arises as human populations encroach upon wildlife habitats, leading to the killing or displacement of
+      animals.</p>
+
+    <p>Inadequate conservation efforts, such as limited funding and weak enforcement, contribute to the endangerment of
+      animals. Addressing these issues requires habitat preservation, sustainable practices, conservation initiatives,
+      and raising awareness about biodiversity.</p>
+
+    <p> Protecting endangered species and their habitats is crucial for maintaining balanced ecosystems and ensuring the
+      long-term survival of animals and humans alike.</p>
+    <div id="chart"></div>
+    <p>The dataset above reveals alarming insights into the causes behind animal endangerment, primarily driven by human
+      activities. Deforestation stands out as a significant threat, with over 2,000 species at risk due to the
+      widespread clearing of forests for agriculture, logging, and urbanization. Overfishing is another pressing
+      concern, directly impacting approximately 1,400 endangered species and necessitating sustainable fishing practices
+      and better regulations. Poaching, pollution, climate change, habitat destruction, and invasive species also
+      contribute to species endangerment to varying degrees.</p>
+  
+    <p>Poaching, the illegal hunting and capturing of animals, poses a substantial risk to around 1,200 species.
+      Pollution, including land, water, and air pollution, endangers roughly 1,000 species, while climate change affects
+      approximately 700 species. Habitat destruction threatens 500 species, and invasive species are a concern for
+      nearly 200 species. Combating these threats requires strengthening anti-poaching measures, implementing strict
+      environmental regulations, mitigating climate change, promoting sustainable land use, and managing invasive
+      species effectively.</p>
+  
+    <p>The dataset underscores the urgent need for comprehensive conservation strategies and sustainable practices to
+      protect endangered species. By addressing deforestation, overfishing, poaching, pollution, climate change, habitat
+      destruction, and invasive species, we can help mitigate the risks and ensure the survival of vulnerable animal
+      populations. It is crucial to foster awareness, promote responsible actions, and collaborate on a global scale to
+      safeguard biodiversity and preserve the intricate balance of our ecosystems for future generations.</p>
+      
+    <h2>Let's put a face to the numbers</h2>
+  </div>
+
+  <div class="chart-container">
+    <div id="modal-chart"></div>
+
+    <div class="modal-container">
+
+
+
+      <div class="modal-square" style="background-color:  #7fb685;">
+        <div class="modal-overlay">
+          <div class="overlay-container">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <div class="overlay-text">
+                <h3>Red Panda</h3>
+                <p>The red panda has become endangered due to various factors, primarily habitat loss and fragmentation.
+                  Deforestation, as a result of logging, agriculture, and infrastructure development, has significantly
+                  reduced the red panda's natural habitat. The conversion of forests into farmland and settlements has
+                  left them with limited areas to survive.</p>
+                <p>Additionally, climate change has impacted the red panda's habitat. Rising temperatures and changes in
+                  precipitation patterns have led to alterations in the vegetation and availability of bamboo, which is
+                  the primary food source for red pandas. These changes affect their ability to find sufficient food and
+                  suitable habitats.</p>
+
+                <p>Furthermore, the illegal wildlife trade poses a significant threat to red pandas. They are sought
+                  after for their distinctive fur and as exotic pets. The demand for red panda pelts and body parts,
+                  driven by the illegal market, has further contributed to their decline.</p>
+
+                <p>Conservation efforts are focused on protecting and restoring red panda habitats, implementing
+                  anti-poaching measures, and raising awareness about their conservation needs. These initiatives aim to
+                  address the threats facing red pandas and promote their long-term survival in the wild.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-image">
+          <img src="Red_Panda.jpeg" alt="Red Panda" />
+        </div>
+        <div class="modal-text" data-overlay-description="Overlay Description 1">
+          <h3>Endangered</h3>
+          <p>Red Panda</p>
+        </div>
+      </div>
+
+
+      <div class="modal-square" style="background-color: #7fb685;">
+        <div class="modal-overlay">
+          <div class="overlay-container">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <div class="overlay-text">
+                <h3>Amur Leopard</h3>
+                <p>The Amur leopard is critically endangered due to various factors that have contributed to its
+                  declining population. Here is a short summary explaining how and why this has happened:</p>
+
+                <p>1. Habitat Loss: The primary reason for the decline of the Amur leopard is habitat loss. Human
+                  activities, such as logging, agriculture, and infrastructure development, have led to the destruction
+                  and fragmentation of the leopard's natural habitat, primarily found in the Russian Far East and parts
+                  of Northeast China.</p>
+
+                <p>2. Poaching: Poaching for their beautiful fur and body parts remains a significant threat to the Amur
+                  leopard. Their unique and highly valuable pelts are sought after in illegal wildlife trade markets,
+                  leading to continued hunting pressure.</p>
+
+                <p>3. Prey Scarcity: The Amur leopard's survival is closely linked to the availability of prey species,
+                  such as deer and wild boar. Overhunting of these prey species, competition with human activities, and
+                  declining food sources have resulted in limited prey availability for the leopards.</p>
+
+                <p>4. Human-Wildlife Conflict: As human settlements expand into leopard habitats, conflicts between
+                  humans and leopards arise. These conflicts often result in the leopards being killed due to perceived
+                  threats to human safety or retaliatory actions for livestock predation.</p>
+
+                <p>5. Low Population Size: The Amur leopard's population is naturally small and isolated, making it more
+                  vulnerable to genetic threats, such as inbreeding and reduced genetic diversity. These factors can
+                  weaken their overall fitness and resilience to environmental changes.</p>
+
+                <p>Conservation efforts, including protected areas, anti-poaching measures, and habitat restoration,
+                  have been implemented to save the Amur leopard from extinction. However, continued collaborative
+                  efforts involving local communities, governments, and conservation organizations are crucial to ensure
+                  the survival and recovery of this critically endangered species.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-image">
+          <img src="AmurLeopard.jpg" alt="AmurLeopard" />
+        </div>
+        <div class="modal-text" data-overlay-description="Overlay Description 2">
+          <h3>Critically Endangered</h3>
+          <p>Amur Leopard</p>
+        </div>
+      </div>
+
+      <div class="modal-square" style="background-color: #7fb685;">
+        <div class="modal-overlay">
+          <div class="overlay-container">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <div class="overlay-text">
+                <h3>Tasmanian Tiger</h3>
+                <p>The Tasmanian tiger, also known as the thylacine, became extinct primarily due to human activities
+                  and factors related to colonization. Here is a short summary explaining how and why the Tasmanian
+                  tiger became extinct:
+
+                <p>1. Hunting and Persecution: The Tasmanian tiger was hunted and persecuted by European settlers who
+                  considered it a threat to livestock. The government in Tasmania even implemented a bounty system that
+                  rewarded people for killing thylacines, leading to widespread hunting and trapping of the species.</p>
+
+                <p>2. Habitat Loss: The expansion of human settlements, agriculture, and logging activities resulted in
+                  significant habitat loss for the Tasmanian tiger. The destruction of its natural habitat reduced its
+                  available range and resources, further endangering the population.</p>
+
+                <p>3. Disease and Competition: The introduction of domestic dogs, as well as diseases carried by these
+                  dogs, posed a significant threat to the Tasmanian tiger. The thylacines had no natural immunity
+                  against these diseases, and competition with introduced predators such as foxes further impacted their
+                  survival.</p>
+
+                <p>4. Lack of Conservation Efforts: Insufficient conservation efforts and the absence of protective
+                  measures contributed to the decline and eventual extinction of the Tasmanian tiger. The species was
+                  not adequately studied, understood, or protected during its existence, which hindered conservation
+                  initiatives.</p>
+
+                <p>The last known Tasmanian tiger died in captivity in 1936, marking the extinction of the species.
+                  Despite unconfirmed reports and occasional sightings, there is no scientific evidence to suggest that
+                  the Tasmanian tiger still exists in the wild today. The extinction of the Tasmanian tiger serves as a
+                  poignant reminder of the impact of human actions on species survival and the importance of
+                  conservation efforts to prevent the loss of biodiversity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-image">
+          <img src="TassieTiger.png" alt="TasmanianTiger" />
+        </div>
+        <div class="modal-text" data-overlay-description="Overlay Description 3">
+          <h3>Extinct</h3>
+          <p>Tasmanian Tiger</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="choropleth-container">
+    <h1 class="mainHeading"> Threatened mammals across the globe</h1>
+    <div id="choropleth"></div>
+  </div>
+  <div class="section">
+    <h2> What does this mean for our future?</h2>
+    <p>Based on the provided data set on endangered animals per country, we can draw the following
+      conclusions and insights:</p>
+
+    <p>Distribution of Endangered Animals: The quantities represent the number of endangered animals in each country. By
+      analyzing this data, we can identify countries with a higher concentration of endangered animals. For example,
+      Madagascar has the highest number of endangered animals (121), followed by Mexico (96), India (93), and the Euro
+      area (99). These countries should be a focus for conservation efforts due to the high number of endangered
+      species.</p>
+
+    <p>Regional Patterns: Examining the data allows us to observe regional patterns in endangered animal populations.
+      For instance, countries within the Euro area and the Caribbean small states exhibit relatively high numbers of
+      endangered animals. This information can help target regional conservation strategies and collaborations.</p>
+
+    <p>Disparities in Endangered Animal Numbers: The data reveals significant disparities in the number of endangered
+      animals among countries. While some countries have very few or even zero endangered animals, others have a
+      substantial count. This indicates that certain countries might have implemented effective conservation measures,
+      while others may need to prioritize conservation efforts to protect their endangered species.</p>
+
+    <p>Large Countries and Endangered Animals: Larger countries tend to have higher numbers of endangered animals due to
+      their larger land areas and diverse ecosystems. For instance, countries like the United States, Canada, China,
+      Brazil, and Australia have notable quantities of endangered animals. Preserving the habitats and ecosystems within
+      these countries is crucial for the conservation of their endangered species.</p>
+
+    <p>Global Significance: The "World" entry in the Country Name column indicates that the data represents a global
+      overview. It might represent data that aggregates information from various countries or regions or includes data
+      for territories or regions that are not individually listed. Understanding the global picture of endangered
+      animals is essential for implementing international conservation efforts and promoting global biodiversity.</p>
+
+    <p>Missing Data: Some entries have missing values, such as the Channel Islands and certain territories like Isle of
+      Man and Kosovo. It's important to ensure that missing data is appropriately handled and considered when drawing
+      conclusions from the dataset.</p>
+
+    <p>These insights can guide policymakers, conservationists, and organizations in identifying regions that require
+      immediate attention for conservation efforts and provide a broader understanding of the distribution and
+      challenges surrounding endangered animals worldwide.</p>
+  </div>
+  <script src="script.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+
+/*Created a text over image overlay with help from W3 schools*/
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(112, 110, 110, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+/*Created an animated effect of title section with help from ChatGPT*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.text-overlay h1 {
+  font-size: 48px;
+  white-space: nowrap;
+}
+
+.text-overlay p {
+  font-size: 25px;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+#chart {
+  margin-right: 50px;
+}
+
+.chart-container .modal-title {
+  font-size: 32px;
+}
+
+/*Modal boxes including the endangered, critically endangered and extinct mammals*/
+.modal-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding-top: 60px;
+}
+
+.modal-square {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*Created a hover over effect with help from W3 schools*/
+.modal-square:hover {
+  opacity: 0.7;
+}
+
+.modal-image img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 380px;
+  float: left;
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
+.modal-text {
+  padding: 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  max-height: 180px;
+}
+
+.modal-text h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 0;
+}
+
+.modal-text p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.modal-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/*Create a container for the overlay boxes above the modal squares */
+
+.overlay-container {
+  position: fixed;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: #619c63;
+  display: none;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.overlay-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*animation for overlay boxes, with help from ChatGPT*/
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlayFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.overlay-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s linear;
+}
+
+.overlay-container.active {
+  opacity: 1;
+  visibility: visible;
+  animation: overlayFadeIn 0.5s ease;
+}
+
+.overlay-container:not(.active) {
+  animation: overlayFadeOut 0.5s ease;
+}
+
+.overlay-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". .";
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.overlay-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.overlay-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.overlay-text {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+
+.overlay-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 16px;
+}
+
+/*Create a close button so users can exit the overlay screen by pressing an X or outside of the container*/
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/*Creates a container for the chroropleth map underneath the modal boxes*/
+.choropleth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 350px;
+}
+
+.mainHeading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#choropleth {
+  display: flex;
+  width: 1400px;
+  height: 1000px
+}
